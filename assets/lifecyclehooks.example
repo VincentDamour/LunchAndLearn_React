@@ -1,0 +1,21 @@
+class MyComponent extends React.Component {
+  // Mounting
+  constructor(props) {}
+  static getDerivedStateFromProps(props, state)  
+  render() {}
+  componentDidMount() {}
+
+  // Updating
+  static getDerivedStateFromProps(props, state)  
+  shouldComponentUpdate(nextProps, nextState)
+  render(){}
+  getSnapshotBeforeUpdate(prevProps, prevState)
+  componentDidUpdate(prevProps, prevState, snapshot)
+
+  //Umounting
+  componentWillUnmount()
+
+  // API
+  forceUpdate()
+  setState(newState)
+}

@@ -1,0 +1,18 @@
+optionalArrayOf: PropTypes.arrayOf(PropTypes.number),
+
+optionalObjectWithShape: PropTypes.shape({
+  color: PropTypes.string,
+  fontSize: PropTypes.number
+}),
+
+requiredFunc: PropTypes.func.isRequired,
+
+// Don't `console.log` or throw, as this
+customProp: function(props, propName, componentName) {
+  if (!/matchme/.test(props[propName])) {
+    return new Error(
+      'Invalid prop `' + propName + '` supplied to' +
+      ' `' + componentName + '`. Validation failed.'
+    );
+  }
+}

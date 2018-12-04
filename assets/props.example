@@ -1,0 +1,12 @@
+class MyComponent extends React.PureComponent {
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    age: PropTypes.number
+  }
+
+  render() {
+    return (
+      <div>Hello {this.props.name}, you are {this.props.age} years old</div>
+    );
+  }
+}

@@ -1,0 +1,13 @@
+class MyComponent extends React.PureComponent {
+  state = { age: 30, name: "" };
+
+  handleClick = () => this.setState({ name: "World" });
+
+  render() {
+    return (
+      <div onClick={thiis.handleClick}>
+        Hello {this.state.name}, you are {this.state.age} years old
+      </div>
+    );
+  }
+}

@@ -1,0 +1,9 @@
+class MyComponent extends React.PureComponent {
+  render() {
+    return (
+      <div>Hello {this.props.name}</div>
+    );
+  }
+}
+ // Use like this:
+<MyComponent name="World" />
