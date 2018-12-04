@@ -1,7 +1,5 @@
 // Import React
 import React from "react";
-import backgroundImage from "../assets/background.jpg";
-import backgroundSlideImage from "../assets/background-slide.png";
 import "../styles/app.css";
 
 // Import Spectacle Core tags
@@ -32,11 +30,13 @@ const theme = createTheme({
   secondary: "Helvetica"
 });
 
+const backgroundSlideImage = "https://vincentdamour.github.io/LunchAndLearn_React/background-slide.png";
+
 export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
-        <Slide transition={["zoom"]} bgColor="primary" bgImage={backgroundImage}>
+        <Slide transition={["zoom"]} bgColor="primary" bgImage="https://vincentdamour.github.io/LunchAndLearn_React/background.jpg">
           <h1 class="vectro">
             <span class="vectro-body">REACT</span>
             <span class="vectro-red">I</span>
